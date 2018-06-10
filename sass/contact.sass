@@ -1,0 +1,149 @@
+// IMPORT LANDING.SASS AS BASE//
+@import landing
+
+// ### CREATE MASTER CSS WITH ALL IMPORTS ### //
+
+html, body
+	height: 100vh
+	width: 100vw
+	overflow: hidden
+
+.contact-page
+	height: 100vh
+	width: 100vw
+	overflow: hidden
+
+.content-left-contact
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex: 1
+	height: 700px
+
+#contact-header-line
+	cursor: auto
+
+	&:before, &:after
+		display: none
+
+.contact-headline
+	flex: 1
+	margin: 0
+
+	h1
+		margin: 0
+		font-size: 105px
+
+	h3
+		color: #CFCFCF
+		margin-top: 10px
+		font-weight: 100
+
+#contact-info-wrapper
+	display: flex
+	flex-direction: column
+	margin: 0
+	width: 500px
+	height: 70%
+	margin-left: 140px
+
+#email-wrapper
+	display: flex
+	flex-direction: row
+	align-items: center
+	margin: 0
+	flex: 1
+
+	a
+		opacity: 0
+		text-decoration: none
+
+#email-deco-line
+	width: 50px
+	margin: 0 30px 0 0
+	opacity: 0
+
+#email-input
+	height: 80px
+	width: 470px
+	box-shadow: 0 16px 84px rgba(#000, 0.05)
+	padding: 0 0 0 30px
+	border: none
+	outline: none
+	opacity: 0
+
+	&::placeholder
+		color: #CFCFCF
+		letter-spacing: 0.85px
+
+.form-wrapper
+	flex: 1
+	margin: 0
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+	form
+		display: flex
+		flex-direction: row
+
+#send-btn
+	margin-left: -80px
+	height: 80px
+	width: 80px
+	box-shadow: -15px 0px 60px 0 rgba(#000, 0.03)
+	opacity: 0
+	cursor: pointer
+	@extend .flex-center
+
+	&:hover
+
+		.triangle
+			transition: all .5s ease
+			transform: rotate(360deg)
+
+	img
+		height: 12px
+
+
+#mail-desc
+	font-size: 13px
+	margin-top: 16px
+	line-height: 23px
+	max-width: 420px
+	opacity: 0
+
+// CONTACT BACKGROUND //
+#contact-bg
+	opacity: 0
+
+// CONTENT RIGHT //
+.content-right
+
+
+// SOCIAL //
+.social-icon-wrapper
+	display: flex
+
+	p
+		margin-right: 30px
+		color: #CFCFCF
+		font-size: 13px
+		margin-top: -2px
+
+// QUOTE //
+#quote
+	transform: rotate(-90deg)
+	font-size: 13px
+	margin-right: -103px
+	color: #CFCFCF
+	margin-top: 25px
+
+	@media screen and (max-height: 860px)
+		display: none
+
+.quote-wrapper
+	flex: 1
+	display: flex
+	align-items: center
+	justify-content: flex-end

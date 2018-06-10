@@ -1,0 +1,51 @@
+// IMPORT LANDING.SASS AS BASE//
+@import landing
+@import project
+
+.project-details-content-right-wrapper
+	align-self: center
+	justify-content: space-between
+	width: 87%
+	margin-left: -80px
+
+.project-details-img-nav-wrapper
+
+	img
+		height: 700px
+
+
+.project-details-text
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-self: flex-start
+	padding-top: 65px
+
+	@media screen and (max-height: 900px)
+		padding: 0 0 180px 0
+
+.project-details-headline
+	margin: 0
+
+.project-header-headline
+	cursor: auto
+
+	&:before, &:after
+		display: none
+
+.project-details-date
+	color: #CFCFCF
+	margin: 5px 0 60px 0
+
+.project-details-desc
+	display: flex
+	flex-direction: column
+	max-width: 420px
+	line-height: 32px
+
+.visit-project
+	margin-top: 30px
+
+	a
+		color: #CFCFCF
+		text-decoration: underline

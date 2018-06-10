@@ -1,0 +1,16 @@
+#reichardt-heading {
+  margin: 100px -453px 0 0; }
+
+#reichardt-details-link {
+  margin-right: 150px; }
+
+#reichardt-details-text {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 0px;
+  margin-top: -30px; }
+
+#reichardt-details-header {
+  line-height: 100px;
+  max-width: 500px; }
